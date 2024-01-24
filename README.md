@@ -75,7 +75,7 @@ $ npm publish
 ```
 
 
-### 출력화면
+### index.js Random출력 화면
 ```
 $ qkralsgml78 홍길동 이순신 김유신
 
