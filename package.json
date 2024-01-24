@@ -10,5 +10,8 @@
     "mini"
   ],
   "author": "qkralsgml78",
-  "license": "ISC"
+  "license": "ISC",
+  "bin": {
+	 "qkralsgml78": "./index.js"
+  }
 }
