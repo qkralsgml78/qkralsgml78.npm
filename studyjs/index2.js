@@ -52,27 +52,18 @@ const a = `
 
 `;
 
-
 console.log(a);
 
 class List{
     constructor(){
+	this.args = process.argv.slice(2);
     }
-     print(){
-	var c = Math.floor(Math.random()*this.arr.length);
-	console.log(`발표자: ${this.arr[c]}`)
-     }
-}
-
-
-class Presenter extends List{
-    constructor(arr){
-	super();
-	this.arr = arr;
+    print(){
+	var c = Math.floor(Math.random()*this.args.length);
+	console.log(`발표자: ${this.args[c]}`);
     }
 }
 
-const presenter = new Presenter(process.argv.slice(2));
+const presenter = new List();
 
 presenter.print();
-
